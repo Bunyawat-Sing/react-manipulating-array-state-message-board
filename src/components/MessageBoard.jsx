@@ -13,13 +13,10 @@ function MessageBoard() {
 
     setMessages([...messages, newMsg]);
     setInputMessage(""); 
-    // const newarr = [...message, inputmessage]
-    // setMessage(newarr)
-    // setInputMessage("")
   }
 
-  function deleteMsg(id) { 
-    const newArr = messages.filter((msg) => msg.id !== id); 
+  function deleteMsg(ID) { 
+    const newArr = messages.filter((msg) => msg.id !== ID); 
     setMessages(newArr);
   }
 
